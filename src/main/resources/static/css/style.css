@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #0288d1; /* Dark blue background */
+    color: white;
+    padding: 1rem 1rem; /* Equal padding at the top and bottom */
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: #ffffff; /* White background for navbar */
+    padding: 0.5rem 1rem; /* Reduced padding for a smaller navbar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for distinction */
+    height: 100px; /* Explicitly set height for the navbar */
+    display: flex;
+    align-items: center; /* Center content vertically */
+}
+
+.navbar-brand img {
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+.navbar-text {
+    color: #0288d1; /* Blue text for contrast */
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    margin-top: 160px; /* Adjusted to ensure content is fully visible below the navbar */
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Form Container */
+.form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for better visual effect */
+    width: 100%;
+    max-width: 600px; /* Maximum width for better readability */
+    margin: 0 auto;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.form-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Input Styles */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Label Styles */
+.form-group label {
+    font-weight: bold;
+}
+
+/* Button Styles */
+button {
+    background-color: #0288d1;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+button:hover {
+    background-color: #0277bd; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #0288d1;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+}

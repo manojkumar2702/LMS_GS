@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat System</title>
+</head>
+<body>
+<h1>Contact Us</h1>
+<form action="/api/messages/send" method="post">
+  <label for="email">Your Email:</label>
+  <input type="email" id="email" name="senderEmail" required>
+  <br>
+  <label for="message">Your Message:</label>
+  <textarea id="message" name="message" required></textarea>
+  <br>
+  <button type="submit">Send Message</button>
+</form>
+</body>
+</html>

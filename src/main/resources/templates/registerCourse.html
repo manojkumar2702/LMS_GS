@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Course Registration</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="/images/logo.png" alt="Giga SEA LMS Logo" width="120" height="120" class="d-inline-block align-text-top">
+        </a>
+        <div class="mx-auto text-center">
+            <h1 class="navbar-text">Giga Sea LMS</h1>
+        </div>
+    </nav>
+</header>
+<br>
+<div class="container">
+    <div class="col-md-6 offset-md-3">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-center">Course Registration</h2>
+            </div>
+            <div class="card-body">
+                <form th:action="@{/saveCourse}" th:object="${course}" method="POST">
+                    <div class="form-group mb-3">
+                        <label for="name">Course Name:</label>
+                        <input th:field="*{name}" type="text" class="form-control" id="name" placeholder="Enter course name">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="description">Description:</label>
+                        <textarea th:field="*{description}" class="form-control" id="description" rows="3" placeholder="Enter course description"></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="instructor">Instructor:</label>
+                        <input th:field="*{instructor}" type="text" class="form-control" id="instructor" placeholder="Enter instructor name">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register Course</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
